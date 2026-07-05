@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.DS_Store
+
+# Local environments and editor state
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Private assistant/editor artifacts
+.agents/
+.claude/
+.codex/
+.cursor/
+
+# Generated or private project outputs
+results/
+experiments/
+generated_hands/
+logs/
+wandb/
+
+# Blender backup files
+*.blend1

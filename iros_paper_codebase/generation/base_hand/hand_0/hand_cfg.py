@@ -1,0 +1,9 @@
+palm_extrude_height_mm = 45.0
+palm_wall_thickness_mm = 4.0
+palm_thickness_mm = 4.0
+finger_palm_base_offset_mm = 10.0
+thumb_mount_size_mm = (25, 7)
+thumb_mount_normal_offset_mm = 3.5
+thumb_mount_height_mm = 41.0
+origin_offset_mm = (6.56, -38, 11.4)
+collision_mesh = True

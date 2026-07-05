@@ -1,0 +1,1814 @@
+<?xml version="1.0"?>
+<robot name="hand_robot">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00377461081 0.0587333068 0.0168665424" rpy="0 -0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="10000" ixy="0" ixz="0" iyy="10000" iyz="0" izz="10000"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="meshes/viz_PalmBody.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="meshes/viz_pad_PalmBody.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227766e-08 -8.74227766e-08 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_pad_f1_j1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0335093886 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0335093811 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227766e-08 -8.74227766e-08 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_pad_f2_j1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00656000059 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00655999407 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227766e-08 -8.74227766e-08 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_pad_f3_j1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0516380593 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0516380519 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.037004564 0.0291235726 0.0196000002" rpy="-2.94208527 1.57079625 0"/>
+      <geometry><mesh filename="meshes/viz_motor_n.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.019052377 0.0327534527 0.0196000114" rpy="-2.94208527 1.57079625 0"/>
+      <geometry><mesh filename="meshes/viz_link_sp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_55.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_54.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_53.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_52.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_51.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_50.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_49.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_48.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_47.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_46.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_45.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_44.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_43.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_42.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_41.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_40.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_39.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_38.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_37.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_36.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_35.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_34.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_33.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_32.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_31.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_30.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_29.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_28.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_27.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_26.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_25.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_24.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_23.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_22.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_21.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_20.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_19.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_18.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000013 0.0379999988 -0.0114000002" rpy="0 -0 0"/>
+      <geometry><mesh filename="collision/collider_pad_PalmBody_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j1_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093886 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0335093811 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999919 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j1_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00656000059 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00655999407 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0291000009" rpy="8.74227624e-08 -8.74227766e-08 1.57079649"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j1_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380593 0.0897768214 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0516380519 0.0783263445 0.0120999971" rpy="3.1415925 -6.12323426e-17 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.037004564 0.0291235726 0.0196000002" rpy="-2.94208527 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.019052377 0.0327534527 0.0196000114" rpy="-2.94208527 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_link_sp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f1_1">
+    <inertial>
+      <origin xyz="-0.0359933637 0.0234517436 -4.13416019e-05" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.0386325005"/>
+      <inertia ixx="1.37776989e-05" ixy="-2.48928237e-08" ixz="7.49433426e-09" iyy="7.10563738e-06" iyz="2.86662458e-06" izz="1.03556194e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810686 -1.2116069e-08 1.45207588e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0204468556 0.0189819764 -0.000184871489" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0456000157 0.0268461015 1.04002797e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_n.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0272845142 0.0268461052 2.39186608e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_sn.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810686 -1.2116069e-08 1.45207588e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810686 -1.2116069e-08 1.45207588e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810686 -1.2116069e-08 1.45207588e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819783 -0.000184871489" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819783 -0.000184871489" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819783 -0.000184871489" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0456000157 0.0268461015 1.04002797e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0272845142 0.0268461052 2.39186608e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_sn.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f1_2">
+    <inertial>
+      <origin xyz="-2.12893667e-08 0.00750006037 -0.0255667269" rpy="-1.50995803e-07 -3.14159274 -8.74227766e-08"/>
+      <mass value="0.0301774514"/>
+      <inertia ixx="2.06198271e-06" ixy="2.16307327e-06" ixz="9.30822458e-07" iyy="7.93838811e-07" iyz="2.26208412e-06" izz="1.93299444e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.74227553e-08 -1.31134172e-07"/>
+      <geometry><mesh filename="meshes/viz_pad_f1_j3.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="4.78766271e-09 0.00750001427 -0.0160495173" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_ln.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="1.06237152e-09 0.00750000868 -0.027499998" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750001008 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j3_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="4.78766271e-09 0.00750001427 -0.0160495173" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_ln.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.06237152e-09 0.00750000868 -0.027499998" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f1_3">
+    <inertial>
+      <origin xyz="-0.00684386306 -0.0266456474 -1.7997321e-08" rpy="3.14159274 -1.57079625 0"/>
+      <mass value="0.0325129779"/>
+      <inertia ixx="1.87860208e-06" ixy="1.92636231e-06" ixz="5.91346785e-07" iyy="3.76748039e-06" iyz="2.27804557e-06" izz="3.14587023e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.31496725e-08 -0.0100810686 1.63559779e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_t.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.07284393e-07 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_pad_f1_j4.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0075000003 -0.0300000031 4.21911706e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0075000003 -0.0185495261 1.20336692e-08" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.31496725e-08 -0.0100810686 1.63559779e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.31496725e-08 -0.0100810686 1.63559779e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.31496725e-08 -0.0100810686 1.63559779e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0300000031 4.96221109e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f1_j4_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0075000003 -0.0300000031 4.21911706e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0075000003 -0.0185495261 1.20336692e-08" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f1_4">
+    <inertial>
+      <origin xyz="-0.0244605951 8.37303826e-09 -5.64573668e-08" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.011167666"/>
+      <inertia ixx="1.44484597e-06" ixy="-3.32256286e-11" ixz="-2.33767839e-11" iyy="1.00471962e-06" iyz="-2.75403063e-11" izz="1.84102577e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810798 -1.39787151e-08 1.32375204e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.028398212 -2.80284218e-09 3.44455575e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_4.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810798 -1.39787151e-08 1.32375204e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810798 -1.39787151e-08 1.32375204e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810798 -1.39787151e-08 1.32375204e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.028398212 -2.80284218e-09 3.44455575e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_4.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f2_1">
+    <inertial>
+      <origin xyz="-0.0359933414 0.0234517418 -4.13473281e-05" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.0386325109"/>
+      <inertia ixx="1.37777284e-05" ixy="-2.4894188e-08" ixz="7.49415384e-09" iyy="7.10565397e-06" iyz="2.86662689e-06" izz="1.03556633e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810677 -1.30385187e-08 1.29948612e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0204468556 0.0189819746 -0.000184875025" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0456000157 0.0268460996 8.54977067e-09" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_n.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0272845142 0.0268461052 1.91506189e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_sn.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810677 -1.30385187e-08 1.29948612e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810677 -1.30385187e-08 1.29948612e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810677 -1.30385187e-08 1.29948612e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487504" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487504" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487504" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0456000157 0.0268460996 8.54977067e-09" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0272845142 0.0268461052 1.91506189e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_sn.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f2_2">
+    <inertial>
+      <origin xyz="2.29263941e-10 0.00750001241 -0.0255667269" rpy="-1.50995803e-07 -3.14159274 -8.74227766e-08"/>
+      <mass value="0.030177503"/>
+      <inertia ixx="2.06261195e-06" ixy="1.75407802e-12" ixz="6.86826057e-13" iyy="1.68381731e-06" iyz="2.2623239e-06" izz="1.0434413e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.74227553e-08 -1.31134172e-07"/>
+      <geometry><mesh filename="meshes/viz_pad_f2_j3.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="2.3902762e-09 0.00750001101 -0.0160495173" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_ln.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="3.27835592e-10 0.00750000495 -0.027499998" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="7.64949548e-10 0.00750000682 -0.0375000015" rpy="-3.1415925 -8.7422741e-08 -2.38418579e-07"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j3_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="2.3902762e-09 0.00750001101 -0.0160495173" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_ln.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="3.2783562e-10 0.00750000495 -0.027499998" rpy="1.57079649 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f2_3">
+    <inertial>
+      <origin xyz="-0.00684386864 -0.0266456008 -1.11225151e-09" rpy="3.14159274 -1.57079625 0"/>
+      <mass value="0.0325130023"/>
+      <inertia ixx="1.87784289e-06" ixy="6.18952697e-12" ixz="1.98075808e-12" iyy="4.33982303e-06" iyz="2.27785872e-06" izz="2.57287758e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.49011603e-08 -0.0100810677 1.22337616e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_t.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.07284393e-07 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_pad_f2_j4.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00749999844 -0.0185495242 5.16578336e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.00749999844 -0.0300000012 -1.93710159e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.49011603e-08 -0.0100810677 1.22337616e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.49011603e-08 -0.0100810677 1.22337616e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.49011603e-08 -0.0100810677 1.22337616e-08" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000435 -0.0300000012 2.92179558e-10" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f2_j4_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00749999844 -0.0185495242 5.1657838e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.00749999844 -0.0300000012 -1.93710159e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f2_4">
+    <inertial>
+      <origin xyz="-0.0244605541 5.58793509e-08 3.53898022e-09" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.0111677026"/>
+      <inertia ixx="1.44441503e-06" ixy="1.37968522e-12" ixz="-9.64991742e-13" iyy="1.0047203e-06" iyz="-3.1119996e-11" izz="1.84055427e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810826 -1.49011647e-08 1.29948621e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0283982158 -3.72529252e-09 2.83070678e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_4.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810826 -1.49011647e-08 1.29948621e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810826 -1.49011647e-08 1.29948621e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810826 -1.49011647e-08 1.29948621e-08" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0283982158 -3.72529252e-09 2.83070678e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_4.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f3_1">
+    <inertial>
+      <origin xyz="-0.0359933265 0.0234517381 -4.13453272e-05" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.0386325182"/>
+      <inertia ixx="1.37777563e-05" ixy="-2.48673313e-08" ixz="7.49591118e-09" iyy="7.10566792e-06" iyz="2.86663312e-06" izz="1.03556986e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810677 -1.31449518e-08 7.07017822e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0204468556 0.0189819746 -0.00018487894" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_1.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0456000157 0.0268460996 2.94969915e-09" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_n.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0272845142 0.0268461052 1.64680802e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_sn.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810677 -1.31449518e-08 7.07017822e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810677 -1.31449518e-08 7.07017822e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810677 -1.31449518e-08 7.07017822e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487894" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487894" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0204468556 0.0189819764 -0.00018487894" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_1_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0456000157 0.0268460996 2.94969915e-09" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0272845142 0.0268461052 1.64680802e-08" rpy="3.1415925 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_sn.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f3_2">
+    <inertial>
+      <origin xyz="-1.96888195e-08 0.00749994908 -0.0255667325" rpy="-1.50995803e-07 3.14159274 8.74227766e-08"/>
+      <mass value="0.0301775672"/>
+      <inertia ixx="2.06352721e-06" ixy="-2.43405919e-06" ixz="-1.0474454e-06" iyy="5.56885981e-07" iyz="2.26266614e-06" izz="2.17100608e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227837e-08 4.37113741e-08"/>
+      <geometry><mesh filename="meshes/viz_pad_f3_j3.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="2.66291789e-09 0.00750000728 -0.0160495173" rpy="1.57079625 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_link_ln.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-1.06237152e-09 0.0075000017 -0.027499998" rpy="1.57079625 1.57079613 0"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.00750000309 -0.0375000015" rpy="-3.1415925 -8.74227695e-08 -6.35730402e-08"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j3_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="2.66291789e-09 0.00750000728 -0.0160495173" rpy="1.57079625 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_link_ln.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.06237152e-09 0.0075000017 -0.027499998" rpy="1.57079625 1.57079613 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f3_3">
+    <inertial>
+      <origin xyz="-0.00684387051 -0.0266456585 6.29130303e-10" rpy="3.14159274 -1.57079625 0"/>
+      <mass value="0.0325129648"/>
+      <inertia ixx="1.87779429e-06" ixy="-2.16695305e-06" ixz="-6.65197111e-07" iyy="3.61559526e-06" iyz="2.27782302e-06" izz="3.29708366e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.31462947e-08 -0.0100810658 8.90539731e-09" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_t.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.07284393e-07 -1.57079625"/>
+      <geometry><mesh filename="meshes/viz_pad_f3_j4.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0075000003 -0.0299999993 -3.23146354e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0075000003 -0.0185495224 4.58308813e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.31462947e-08 -0.0100810658 8.90539731e-09" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.31462947e-08 -0.0100810658 8.90539731e-09" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.31462947e-08 -0.0100810658 8.90539731e-09" rpy="-1.57079625 3.55271326e-15 1.05879106e-22"/>
+      <geometry><mesh filename="collision/collider_joint_t_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00950000249 -0.0299999993 -2.48836973e-09" rpy="-1.57079625 1.94707184e-07 -1.57079625"/>
+      <geometry><mesh filename="collision/collider_pad_f3_j4_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0075000003 -0.0299999993 -3.23146354e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0075000003 -0.0185495224 4.58308813e-09" rpy="-1.57079649 -1.07284407e-07 1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_f3_4">
+    <inertial>
+      <origin xyz="-0.0244607814 3.61886188e-09 -4.52814852e-08" rpy="1.57079637 -1.57079613 0"/>
+      <mass value="0.0111676425"/>
+      <inertia ixx="1.44432432e-06" ixy="-7.52612244e-11" ixz="-9.13011032e-12" iyy="1.00466123e-06" iyz="1.07692861e-10" izz="1.84052282e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0100810863 -1.50075987e-08 5.78693982e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="meshes/viz_joint_s.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0283982195 -3.8317256e-09 -4.00602485e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="meshes/viz_link_4.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0100810863 -1.50075987e-08 5.78693982e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810863 -1.50075987e-08 5.78693982e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0100810863 -1.50075987e-08 5.78693982e-09" rpy="-1.57079625 -7.10542651e-15 -3.37489639e-22"/>
+      <geometry><mesh filename="collision/collider_joint_s_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0283982195 -3.8317256e-09 -4.00602485e-09" rpy="1.57079625 2.06632038e-07 -1.57079637"/>
+      <geometry><mesh filename="collision/collider_link_4.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_t1_1">
+    <inertial>
+      <origin xyz="0.00749999611 0.000228895922 -0.0253254957" rpy="1.57079637 -0.199507311 -1.57079625"/>
+      <mass value="0.030423882"/>
+      <inertia ixx="4.25180886e-06" ixy="7.71336321e-08" ixz="5.14994556e-12" iyy="4.35508987e-06" iyz="-2.88376097e-12" izz="2.7452366e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.00749999983 3.38326589e-09 -0.027499998" rpy="-3.1415925 -1.57079625 0"/>
+      <geometry><mesh filename="meshes/viz_motor_n.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.00750000216 8.50554027e-09 -0.0160495192" rpy="-3.1415925 -1.57079625 0"/>
+      <geometry><mesh filename="meshes/viz_link_lp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00749999983 3.38326589e-09 -0.027499998" rpy="-3.1415925 -1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00750000216 8.50554027e-09 -0.0160495192" rpy="-3.1415925 -1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_link_lp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_t1_2">
+    <inertial>
+      <origin xyz="0.000100973062 -1.00022557e-09 -0.031917613" rpy="1.57079625 1.3712889 -5.89764326e-08"/>
+      <mass value="0.0281416117"/>
+      <inertia ixx="1.19477759e-06" ixy="-1.09500584e-06" ixz="1.39756012e-06" iyy="3.1158994e-07" iyz="-5.86232205e-07" izz="8.18647549e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.00999999978 -1.03102016e-09 -0.0344999917" rpy="1.57079625 5.56362778e-08 1.57079637"/>
+      <geometry><mesh filename="meshes/viz_pad_t1_j3.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="3.7252903e-09 -1.03102027e-09 -0.0344999991" rpy="-5.56362743e-08 -1.34110451e-07 1.77635684e-15"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-8.38190317e-09 2.91267988e-09 -0.0161845069" rpy="-5.56362743e-08 -1.34110451e-07 1.77635684e-15"/>
+      <geometry><mesh filename="meshes/viz_link_sp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999978 -2.89366531e-09 -0.0344999917" rpy="1.57079613 8.59252367e-08 1.57079637"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j3_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="3.7252903e-09 -1.03102027e-09 -0.0344999991" rpy="-5.56362743e-08 -1.34110437e-07 1.77635663e-15"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.02445483e-08 2.9126801e-09 -0.0161844995" rpy="-5.56362743e-08 -1.1920929e-07 1.99840144e-15"/>
+      <geometry><mesh filename="collision/collider_link_sp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_t1_3">
+    <inertial>
+      <origin xyz="9.29422677e-05 -0.0324999802 -3.89928623e-09" rpy="2.36256632e-08 1.16844689e-07 -1.37128901"/>
+      <mass value="0.030576168"/>
+      <inertia ixx="1.40952658e-06" ixy="-2.27243888e-06" ixz="2.14726277e-06" iyy="2.83139913e-06" iyz="-7.37816341e-07" izz="3.94655792e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.11758709e-08 -0.0100810658 1.3674418e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="meshes/viz_joint_t.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.00999999791 -0.0370000079 -2.57308619e-09" rpy="2.98023171e-08 1.57079625 0"/>
+      <geometry><mesh filename="meshes/viz_pad_t1_j4.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-1.86264515e-09 -0.0370000079 -2.57308619e-09" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="meshes/viz_motor_w.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-1.11758709e-08 -0.0186845213 -4.11500123e-09" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="meshes/viz_link_sp.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.11758709e-08 -0.0100810658 1.3674418e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.11758709e-08 -0.0100810658 1.3674418e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.11758709e-08 -0.0100810658 1.3674418e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_9.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_8.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_7.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_6.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_5.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_4.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_17.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_16.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_15.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_14.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_13.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_12.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_11.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_10.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.00999999791 -0.0370000079 -7.10441039e-10" rpy="-1.1920929e-07 1.57079625 0"/>
+      <geometry><mesh filename="collision/collider_pad_t1_j4_0.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.86264515e-09 -0.0370000079 -2.57308619e-09" rpy="-1.57079625 1.77635663e-15 0"/>
+      <geometry><mesh filename="collision/collider_motor.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="-1.11758709e-08 -0.0186845213 -4.11500123e-09" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_link_sp.stl"/></geometry>
+    </collision>
+  </link>
+  <link name="L_t1_4">
+    <inertial>
+      <origin xyz="0 -0.0244602691 -4.73612403e-08" rpy="2.36256632e-08 1.16844689e-07 -1.37128901"/>
+      <mass value="0.0111677463"/>
+      <inertia ixx="1.03760806e-06" ixy="1.62589445e-07" ixz="-1.9016882e-11" iyy="1.80838227e-06" iyz="3.05980233e-11" izz="1.44511989e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.3038516e-08 -0.0100810621 1.20948949e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="meshes/viz_joint_t.stl"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="1.86264515e-09 -0.028398212 -3.12719539e-09" rpy="1.57079649 -0 0"/>
+      <geometry><mesh filename="meshes/viz_link_4.stl"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.3038516e-08 -0.0100810621 1.20948949e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_3.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.3038516e-08 -0.0100810621 1.20948949e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_2.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.3038516e-08 -0.0100810621 1.20948949e-08" rpy="-1.57079625 -0 0"/>
+      <geometry><mesh filename="collision/collider_joint_t_1.stl"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.86264515e-09 -0.028398212 -3.12719539e-09" rpy="1.57079649 -0 0"/>
+      <geometry><mesh filename="collision/collider_link_4.stl"/></geometry>
+    </collision>
+  </link>
+  <joint name="J_f1_1_4" type="revolute">
+    <parent link="base_link"/>
+    <child link="L_f1_1"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="0.0335093811 0.0897768214 0.0196000002" rpy="-1.57079649 -6.12323426e-17 -1.57079625"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f1_2_2" type="revolute">
+    <parent link="L_f1_1"/>
+    <child link="L_f1_2"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="0.5"/>
+    <origin xyz="-0.0381000079 0.0268461015 9.83404558e-09" rpy="-1.57079649 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f1_3_6" type="revolute">
+    <parent link="L_f1_2"/>
+    <child link="L_f1_3"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="2"/>
+    <origin xyz="1.7180426e-09 0.015000009 -0.0274999961" rpy="-3.1415925 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f1_4_4" type="revolute">
+    <parent link="L_f1_3"/>
+    <child link="L_f1_4"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="1.97380201e-09 -0.0300000031 4.54695259e-09" rpy="-2.06632052e-07 -1.07284407e-07 1.57079637"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f2_1_4" type="revolute">
+    <parent link="base_link"/>
+    <child link="L_f2_1"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="-0.00656000013 0.0897768214 0.0196000002" rpy="-1.57079649 -6.12323426e-17 -1.57079625"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f2_2_2" type="revolute">
+    <parent link="L_f2_1"/>
+    <child link="L_f2_2"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="0.5"/>
+    <origin xyz="-0.0381000079 0.0268460996 7.25025506e-09" rpy="-1.57079649 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f2_3_6" type="revolute">
+    <parent link="L_f2_2"/>
+    <child link="L_f2_3"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="2"/>
+    <origin xyz="1.31134215e-09 0.0150000053 -0.0274999961" rpy="-3.1415925 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f2_4_4" type="revolute">
+    <parent link="L_f2_3"/>
+    <child link="L_f2_4"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="3.7252903e-09 -0.0300000012 -9.53595092e-10" rpy="-2.06632052e-07 -1.07284407e-07 1.57079637"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f3_1_4" type="revolute">
+    <parent link="base_link"/>
+    <child link="L_f3_1"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="-0.0516380593 0.0897768214 0.0196000002" rpy="-1.57079649 -6.12323426e-17 -1.57079625"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f3_2_2" type="revolute">
+    <parent link="L_f3_1"/>
+    <child link="L_f3_2"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="0.5"/>
+    <origin xyz="-0.0381000079 0.0268460996 2.3834652e-09" rpy="-1.57079649 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f3_3_6" type="revolute">
+    <parent link="L_f3_2"/>
+    <child link="L_f3_3"/>
+    <limit effort="0.6" velocity="8" lower="-0.5" upper="2"/>
+    <origin xyz="-1.7180426e-09 0.0150000015 -0.0274999961" rpy="3.1415925 1.57079613 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_f3_4_4" type="revolute">
+    <parent link="L_f3_3"/>
+    <child link="L_f3_4"/>
+    <limit effort="0.6" velocity="8" lower="-0.2" upper="1.7"/>
+    <origin xyz="1.97042449e-09 -0.0299999993 -2.903628e-09" rpy="-2.06632052e-07 -1.07284407e-07 1.57079637"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_t1_1_3" type="revolute">
+    <parent link="base_link"/>
+    <child link="L_t1_1"/>
+    <limit effort="0.6" velocity="8" lower="-1.6" upper="0"/>
+    <origin xyz="0.0443557985 0.0276371725 0.0196000002" rpy="-1.37128901 1.57079625 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_t1_2_1" type="revolute">
+    <parent link="L_t1_1"/>
+    <child link="L_t1_2"/>
+    <limit effort="0.6" velocity="8" lower="-2" upper="0.45"/>
+    <origin xyz="-2.9272787e-10 2.82826318e-09 -0.027499998" rpy="-1.57079625 -1.57079625 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_t1_3_7" type="revolute">
+    <parent link="L_t1_2"/>
+    <child link="L_t1_3"/>
+    <limit effort="0.6" velocity="8" lower="-1" upper="1.7"/>
+    <origin xyz="5.58793545e-09 -1.12045684e-09 -0.0419999957" rpy="1.57079625 -1.1920929e-07 1.99840144e-15"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="J_t1_4_7" type="revolute">
+    <parent link="L_t1_3"/>
+    <child link="L_t1_4"/>
+    <limit effort="0.6" velocity="8" lower="-1" upper="1.7"/>
+    <origin xyz="0 -0.044500012 -3.46715701e-09" rpy="-5.77315973e-15 -0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+</robot>
