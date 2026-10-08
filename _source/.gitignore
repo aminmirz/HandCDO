@@ -1,0 +1,6 @@
+preview/
+__pycache__/
+.runtime/
+site/models/*/*.blend1
+site/models/*/generation.log
+scripts/data/mano/

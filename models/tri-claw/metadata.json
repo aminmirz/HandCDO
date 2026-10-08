@@ -1,0 +1,221 @@
+{
+  "schema": "handcdo-generation-v2-mesh/1",
+  "id": "tri-claw",
+  "parameters": {
+    "label": "Tri-claw, no thumb",
+    "palm": {
+      "size_mm": 92,
+      "sides": 6,
+      "aspect": 1.0,
+      "rotation_deg": 0
+    },
+    "fingers": [
+      {
+        "location": 0.083,
+        "code": "0--111",
+        "link_added_mm": 6,
+        "angle_deg": 0
+      },
+      {
+        "location": 0.417,
+        "code": "0--111",
+        "link_added_mm": 6,
+        "angle_deg": 0
+      },
+      {
+        "location": 0.75,
+        "code": "0--111",
+        "link_added_mm": 6,
+        "angle_deg": 0
+      }
+    ],
+    "thumb": null,
+    "finger_number": 3,
+    "thumb_number": 0,
+    "palm_size_mm": 92,
+    "motion": {
+      "flex": {
+        "finger_1": 0.79,
+        "finger_2": 0.79,
+        "finger_3": 0.79
+      },
+      "spread": [
+        1.0,
+        1.0
+      ],
+      "method": "BVH mesh overlap, contacts present at rest ignored",
+      "step": 0.01
+    },
+    "palm_extent_mm": [
+      92.00000000005868,
+      82.42172808436467
+    ],
+    "finger_bases_mm": [
+      [
+        34.36269586554647,
+        22.903792960201155
+      ],
+      [
+        -37.110086801691935,
+        18.145172270543018
+      ],
+      [
+        2.747390936145269,
+        -41.21086404218234
+      ]
+    ],
+    "finger_normals": [
+      [
+        0.8660254037844393,
+        0.49999999999999883
+      ],
+      [
+        -0.8660254037844387,
+        0.49999999999999994
+      ],
+      [
+        0.0,
+        -1.0
+      ]
+    ],
+    "finger_codes": [
+      "0--111",
+      "0--111",
+      "0--111"
+    ],
+    "thumb_codes": []
+  },
+  "source": "generation_v2/blender/HandGeneratorV2.py",
+  "source_hashes": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blender/components.blend": "f09c54cc7cf06e6193b0f8f0cac57e45598f20d3780b015b19ac17de203aee18",
+    "blender/HandGeneratorV2.py": "39e652995d19aa29367c1a3420386e5a45dbe955cda311c2f4cddf943288a898",
+    "blender_full_assembly.py": "b5ea911948c9adfce3807d317b7bb8e2900d16a15cf9f1c416e611a01cbb8cb3",
+    "Config.py": "cdaca8d6346ff7575d2168697207fc90299ac1c1ea98352ec02288dc6f38a8b5",
+    "FingerClass.py": "0119f01120cbf133c41038b67ff4e53b285d9dbe3757e6cddb8ed3d31fbf65b4",
+    "GenerateHands.py": "46521da03f0772d02e792963f8d7a4643af6c9fde4773d24380d76b9804f4811",
+    "GenerateHandsBatch.py": "618508bfa3d75269322ed6b750a4c8aa4e3eff975d96e19b23d2ce117642b05e",
+    "HandClass.py": "f3fb1030c17ead1efd54f71ad0d7bd8c95d5aa3b41549ae2468e0ecd6a255316",
+    "PalmClass.py": "320ed532ce3a2e35fa857f45b69bbdc497a88c021c370cbcc531346f5db2ab58",
+    "ParamGen.py": "0da8d834b408f58e9e4cc209e7a9fcab3d5413f200f968e57ce2ec5086866fe7",
+    "utils.py": "5f0dfd405f99ec94d5b5beaa54f7b4839063539403eb5b4f7204054f5d13abe2"
+  },
+  "blender": "5.2.2 LTS",
+  "units": "meters",
+  "joints": [
+    {
+      "name": "J_f1_1_4",
+      "node": 1,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_1"
+    },
+    {
+      "name": "J_f1_2_4",
+      "node": 2,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_1"
+    },
+    {
+      "name": "J_f1_3_4",
+      "node": 3,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_1"
+    },
+    {
+      "name": "J_f2_1_4",
+      "node": 4,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_2"
+    },
+    {
+      "name": "J_f2_2_4",
+      "node": 5,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_2"
+    },
+    {
+      "name": "J_f2_3_4",
+      "node": 6,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_2"
+    },
+    {
+      "name": "J_f3_1_4",
+      "node": 7,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_3"
+    },
+    {
+      "name": "J_f3_2_4",
+      "node": 8,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_3"
+    },
+    {
+      "name": "J_f3_3_4",
+      "node": 9,
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": -0.20000000298023224,
+      "upper": 1.7000000476837158,
+      "chain": "finger_3"
+    }
+  ],
+  "stats": {
+    "meshes": 69,
+    "unique_geometries": 11,
+    "triangles": 492903,
+    "joints": 9
+  }
+}

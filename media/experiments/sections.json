@@ -1,0 +1,59 @@
+{
+  "stir": {
+    "duration": 13.63,
+    "plot_start_in_composite": 0.0,
+    "columns": [
+      "high",
+      "mid",
+      "low"
+    ],
+    "source": "exp_exported.mp4",
+    "row": {
+      "y": 0,
+      "h": 402
+    },
+    "talk_columns": [
+      0,
+      1,
+      2
+    ]
+  },
+  "hammer": {
+    "duration": 2.98,
+    "plot_start_in_composite": 2.41,
+    "columns": [
+      "high",
+      "mid",
+      "low"
+    ],
+    "source": "exp_exported.mp4",
+    "row": {
+      "y": 402,
+      "h": 376
+    },
+    "talk_columns": [
+      1,
+      0,
+      2
+    ]
+  },
+  "cut": {
+    "duration": 10.69,
+    "plot_start_in_composite": 2.94,
+    "columns": [
+      "high",
+      "mid",
+      "low"
+    ],
+    "source": "exp_exported.mp4",
+    "row": {
+      "y": 778,
+      "h": 302
+    },
+    "talk_columns": [
+      2,
+      0,
+      1
+    ]
+  }
+}

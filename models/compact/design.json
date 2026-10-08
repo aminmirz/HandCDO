@@ -1,0 +1,91 @@
+{
+  "label": "Compact 3+1",
+  "palm": {
+    "size_mm": 110,
+    "sides": 4,
+    "aspect": 1.45,
+    "rotation_deg": 0
+  },
+  "fingers": [
+    {
+      "location": 0.155,
+      "code": "2-1-1",
+      "link_added_mm": 0,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.25,
+      "code": "2-1-1",
+      "link_added_mm": 0,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.345,
+      "code": "2-1-1",
+      "link_added_mm": 0,
+      "angle_deg": 0
+    }
+  ],
+  "thumb": {
+    "location": 0.955,
+    "code": "1--22",
+    "link_added_mm": 0
+  },
+  "finger_number": 3,
+  "thumb_number": 1,
+  "palm_size_mm": 110,
+  "motion": {
+    "flex": {
+      "finger_1": 0.81,
+      "finger_2": 0.81,
+      "finger_3": 0.81,
+      "thumb_1": 0.85
+    },
+    "spread": [
+      1.0,
+      0.0
+    ],
+    "method": "BVH mesh overlap, contacts present at rest ignored",
+    "step": 0.01
+  },
+  "palm_extent_mm": [
+    110.00000000007964,
+    75.86206896557218
+  ],
+  "finger_bases_mm": [
+    [
+      36.153226527751194,
+      37.93103448278608
+    ],
+    [
+      1.5172413793114428,
+      37.93103448278608
+    ],
+    [
+      -33.11874376912832,
+      37.93103448278608
+    ]
+  ],
+  "finger_normals": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "finger_codes": [
+    "2-1-1",
+    "2-1-1",
+    "2-1-1"
+  ],
+  "thumb_codes": [
+    "1--22"
+  ]
+}

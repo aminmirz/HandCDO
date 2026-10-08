@@ -1,0 +1,125 @@
+[
+  {
+    "id": "demo-stir",
+    "source": "iros_paper_codebase/optimization/grasp_evaluation/data/stir/track_vis.mp4",
+    "speed": 9.342
+  },
+  {
+    "id": "demo-hammer",
+    "source": "iros_paper_codebase/optimization/grasp_evaluation/data/hammer/track_vis.mp4",
+    "speed": 3.833
+  },
+  {
+    "id": "demo-knife",
+    "source": "iros_paper_codebase/optimization/grasp_evaluation/data/knife/track_vis.mp4",
+    "speed": 7.892
+  },
+  {
+    "id": "demo-saw",
+    "source": "iros_paper_codebase/optimization/grasp_evaluation/data/saw/track_vis.mp4",
+    "speed": 9.075
+  },
+  {
+    "id": "demo-scoup",
+    "source": "iros_paper_codebase/optimization/grasp_evaluation/data/scoup/track_vis.mp4",
+    "speed": 7.392
+  },
+  {
+    "id": "grasp-pose-sampling",
+    "source": "website_assets/assets/graspsample.mp4"
+  },
+  {
+    "id": "joint-space-search",
+    "source": "website_assets/assets/grasp.mp4"
+  },
+  {
+    "id": "framework-sampling",
+    "source": "figs/Framework_v2.jpg",
+    "crop": [
+      1550,
+      1640,
+      0,
+      650
+    ]
+  },
+  {
+    "id": "framework-wrench",
+    "source": "figs/Framework_v2.jpg",
+    "crop": [
+      980,
+      620,
+      372,
+      3140
+    ]
+  },
+  {
+    "id": "framework-demos",
+    "source": "figs/Framework_v2.jpg",
+    "crop": [
+      1000,
+      1000,
+      1200,
+      2050
+    ]
+  },
+  {
+    "id": "design-high",
+    "source": "figs/SimResults_v2.jpg",
+    "crop": [
+      3560,
+      1660,
+      12966,
+      989
+    ]
+  },
+  {
+    "id": "design-mid",
+    "source": "figs/SimResults_v2.jpg",
+    "crop": [
+      3560,
+      1730,
+      12966,
+      2931
+    ]
+  },
+  {
+    "id": "design-low",
+    "source": "figs/SimResults_v2.jpg",
+    "crop": [
+      3560,
+      1730,
+      12966,
+      4945
+    ]
+  },
+  {
+    "id": "teaser-sim",
+    "source": "figs/Teaser.jpg",
+    "crop": [
+      2283,
+      3996,
+      0,
+      545
+    ]
+  },
+  {
+    "id": "teaser-real",
+    "source": "figs/Teaser.jpg",
+    "crop": [
+      2253,
+      3996,
+      2283,
+      545
+    ]
+  },
+  {
+    "id": "teaser-task",
+    "source": "figs/Teaser.jpg",
+    "crop": [
+      1472,
+      3996,
+      4536,
+      545
+    ]
+  }
+]

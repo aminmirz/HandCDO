@@ -1,0 +1,116 @@
+{
+  "label": "Pentagon star, no thumb",
+  "palm": {
+    "size_mm": 118,
+    "sides": 5,
+    "aspect": 1.0,
+    "rotation_deg": 0
+  },
+  "fingers": [
+    {
+      "location": 0.05,
+      "code": "1-1-11",
+      "link_added_mm": 6,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.25,
+      "code": "1-1-11",
+      "link_added_mm": 6,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.45,
+      "code": "1-1-11",
+      "link_added_mm": 6,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.65,
+      "code": "1-1-11",
+      "link_added_mm": 6,
+      "angle_deg": 0
+    },
+    {
+      "location": 0.85,
+      "code": "1-1-11",
+      "link_added_mm": 6,
+      "angle_deg": 0
+    }
+  ],
+  "thumb": null,
+  "finger_number": 5,
+  "thumb_number": 0,
+  "palm_size_mm": 118,
+  "motion": {
+    "flex": {
+      "finger_1": 0.62,
+      "finger_2": 0.62,
+      "finger_3": 0.62,
+      "finger_4": 0.62,
+      "finger_5": 0.62
+    },
+    "spread": [
+      1.0,
+      1.0
+    ],
+    "method": "BVH mesh overlap, contacts present at rest ignored",
+    "step": 0.01
+  },
+  "palm_extent_mm": [
+    118.00000000000608,
+    112.2246689228339
+  ],
+  "finger_bases_mm": [
+    [
+      48.595071909012475,
+      15.479462215185318
+    ],
+    [
+      0.2948596542608506,
+      51.00007668717501
+    ],
+    [
+      -48.41283862076822,
+      16.04031860633998
+    ],
+    [
+      -30.215639413759156,
+      -41.086614598079585
+    ],
+    [
+      29.738546471254228,
+      -41.43324291062064
+    ]
+  ],
+  "finger_normals": [
+    [
+      0.9510565162951534,
+      0.3090169943749482
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      -0.9510565162951541,
+      0.309016994374946
+    ],
+    [
+      -0.587785252292473,
+      -0.8090169943749476
+    ],
+    [
+      0.5877852522924736,
+      -0.8090169943749471
+    ]
+  ],
+  "finger_codes": [
+    "1-1-11",
+    "1-1-11",
+    "1-1-11",
+    "1-1-11",
+    "1-1-11"
+  ],
+  "thumb_codes": []
+}

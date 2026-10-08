@@ -1,0 +1,452 @@
+{
+  "clips": [
+    {
+      "id": "normal-offset-t",
+      "label": "Normal Offset [T]",
+      "range": [
+        -30,
+        30
+      ],
+      "crop": [
+        375,
+        60,
+        1155,
+        645
+      ],
+      "video": "media/params/normal-offset-t.mp4",
+      "poster": "media/params/normal-offset-t.webp"
+    },
+    {
+      "id": "normal-offset-f0",
+      "label": "Normal Offset [F0]",
+      "range": [
+        0,
+        5
+      ],
+      "crop": [
+        335,
+        49,
+        1129,
+        644
+      ],
+      "video": "media/params/normal-offset-f0.mp4",
+      "poster": "media/params/normal-offset-f0.webp"
+    },
+    {
+      "id": "normal-offset-f1",
+      "label": "Normal Offset [F1]",
+      "range": [
+        0,
+        10
+      ],
+      "crop": [
+        328,
+        38,
+        1136,
+        644
+      ],
+      "video": "media/params/normal-offset-f1.mp4",
+      "poster": "media/params/normal-offset-f1.webp"
+    },
+    {
+      "id": "normal-offset-f2",
+      "label": "Normal Offset [F2]",
+      "range": [
+        0,
+        5
+      ],
+      "crop": [
+        335,
+        49,
+        1130,
+        645
+      ],
+      "video": "media/params/normal-offset-f2.mp4",
+      "poster": "media/params/normal-offset-f2.webp"
+    },
+    {
+      "id": "side-offset-f0",
+      "label": "Side Offset [F0]",
+      "range": [
+        0,
+        30
+      ],
+      "crop": [
+        342,
+        60,
+        1122,
+        645
+      ],
+      "video": "media/params/side-offset-f0.mp4",
+      "poster": "media/params/side-offset-f0.webp"
+    },
+    {
+      "id": "side-offset-f2",
+      "label": "Side Offset [F2]",
+      "range": [
+        -30,
+        0
+      ],
+      "crop": [
+        310,
+        60,
+        1090,
+        645
+      ],
+      "video": "media/params/side-offset-f2.mp4",
+      "poster": "media/params/side-offset-f2.webp"
+    },
+    {
+      "id": "side-offset-t",
+      "label": "Side Offset [T]",
+      "range": [
+        -40,
+        10
+      ],
+      "crop": [
+        285,
+        60,
+        1179,
+        731
+      ],
+      "video": "media/params/side-offset-t.mp4",
+      "poster": "media/params/side-offset-t.webp"
+    },
+    {
+      "id": "angle-f0",
+      "label": "Angle [F0]",
+      "range": [
+        0,
+        30
+      ],
+      "crop": [
+        342,
+        59,
+        1122,
+        644
+      ],
+      "video": "media/params/angle-f0.mp4",
+      "poster": "media/params/angle-f0.webp"
+    },
+    {
+      "id": "angle-f2",
+      "label": "Angle [F2]",
+      "range": [
+        -30,
+        0
+      ],
+      "crop": [
+        281,
+        59,
+        1062,
+        645
+      ],
+      "video": "media/params/angle-f2.mp4",
+      "poster": "media/params/angle-f2.webp"
+    },
+    {
+      "id": "angle-t",
+      "label": "Angle [T]",
+      "range": [
+        -30,
+        30
+      ],
+      "crop": [
+        245,
+        60,
+        1200,
+        795
+      ],
+      "video": "media/params/angle-t.mp4",
+      "poster": "media/params/angle-t.webp"
+    },
+    {
+      "id": "link-length-f0",
+      "label": "Added Link Length [F0]",
+      "range": [
+        0,
+        10
+      ],
+      "crop": [
+        299,
+        0,
+        1167,
+        651
+      ],
+      "video": "media/params/link-length-f0.mp4",
+      "poster": "media/params/link-length-f0.webp"
+    },
+    {
+      "id": "link-length-f1",
+      "label": "Added Link Length [F1]",
+      "range": [
+        0,
+        10
+      ],
+      "crop": [
+        299,
+        0,
+        1167,
+        651
+      ],
+      "video": "media/params/link-length-f1.mp4",
+      "poster": "media/params/link-length-f1.webp"
+    },
+    {
+      "id": "link-length-f2",
+      "label": "Added Link Length [F2]",
+      "range": [
+        0,
+        10
+      ],
+      "crop": [
+        299,
+        0,
+        1167,
+        651
+      ],
+      "video": "media/params/link-length-f2.mp4",
+      "poster": "media/params/link-length-f2.webp"
+    },
+    {
+      "id": "link-length-t",
+      "label": "Added Link Length [T]",
+      "range": [
+        0,
+        10
+      ],
+      "crop": [
+        365,
+        60,
+        1144,
+        644
+      ],
+      "video": "media/params/link-length-t.mp4",
+      "poster": "media/params/link-length-t.webp"
+    },
+    {
+      "id": "fingertip-scale-y",
+      "label": "Fingertip Scale Y",
+      "range": [
+        1,
+        1.5
+      ],
+      "crop": [
+        343,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/fingertip-scale-y.mp4",
+      "poster": "media/params/fingertip-scale-y.webp"
+    },
+    {
+      "id": "fingertip-scale-z",
+      "label": "Fingertip Scale Z",
+      "range": [
+        0.5,
+        1.5
+      ],
+      "crop": [
+        338,
+        32,
+        1155,
+        644
+      ],
+      "video": "media/params/fingertip-scale-z.mp4",
+      "poster": "media/params/fingertip-scale-z.webp"
+    },
+    {
+      "id": "max-surface-deform",
+      "label": "Max Surface Deform",
+      "range": [
+        0,
+        20
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/max-surface-deform.mp4",
+      "poster": "media/params/max-surface-deform.webp"
+    },
+    {
+      "id": "center-offset-k0",
+      "label": "Center Offset [K0]",
+      "range": [
+        0,
+        1
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/center-offset-k0.mp4",
+      "poster": "media/params/center-offset-k0.webp"
+    },
+    {
+      "id": "center-angle-k0",
+      "label": "Center Angle [K0]",
+      "range": [
+        0,
+        360
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/center-angle-k0.mp4",
+      "poster": "media/params/center-angle-k0.webp"
+    },
+    {
+      "id": "spread-k0",
+      "label": "Spread [K0]",
+      "range": [
+        0.05,
+        0.3
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/spread-k0.mp4",
+      "poster": "media/params/spread-k0.webp"
+    },
+    {
+      "id": "intensity-ratio-k0",
+      "label": "Intensity Ratio [K0]",
+      "range": [
+        0,
+        1
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/intensity-ratio-k0.mp4",
+      "poster": "media/params/intensity-ratio-k0.webp"
+    },
+    {
+      "id": "center-offset-k1",
+      "label": "Center Offset [K1]",
+      "range": [
+        0,
+        1
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/center-offset-k1.mp4",
+      "poster": "media/params/center-offset-k1.webp"
+    },
+    {
+      "id": "center-angle-k1",
+      "label": "Center Angle [K1]",
+      "range": [
+        0,
+        360
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/center-angle-k1.mp4",
+      "poster": "media/params/center-angle-k1.webp"
+    },
+    {
+      "id": "spread-k1",
+      "label": "Spread [K1]",
+      "range": [
+        0.05,
+        0.3
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/spread-k1.mp4",
+      "poster": "media/params/spread-k1.webp"
+    },
+    {
+      "id": "intensity-ratio-k1",
+      "label": "Intensity Ratio [K1]",
+      "range": [
+        0,
+        1
+      ],
+      "crop": [
+        344,
+        60,
+        1122,
+        644
+      ],
+      "video": "media/params/intensity-ratio-k1.mp4",
+      "poster": "media/params/intensity-ratio-k1.webp"
+    },
+    {
+      "id": "finger-number",
+      "label": "Finger Number",
+      "range": [
+        "3 fingers",
+        "2 fingers"
+      ],
+      "crop": [
+        343,
+        60,
+        1122,
+        645
+      ],
+      "video": "media/params/finger-number.mp4",
+      "poster": "media/params/finger-number.webp"
+    },
+    {
+      "id": "finger-code",
+      "label": "Finger Code",
+      "range": [
+        "code A",
+        "code B"
+      ],
+      "crop": [
+        365,
+        93,
+        1100,
+        644
+      ],
+      "video": "media/params/finger-code.mp4",
+      "poster": "media/params/finger-code.webp"
+    },
+    {
+      "id": "thumb-code",
+      "label": "Thumb Code",
+      "range": [
+        "code A",
+        "code B"
+      ],
+      "crop": [
+        291,
+        60,
+        1110,
+        674
+      ],
+      "video": "media/params/thumb-code.mp4",
+      "poster": "media/params/thumb-code.webp"
+    }
+  ]
+}
