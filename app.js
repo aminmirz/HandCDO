@@ -138,10 +138,12 @@
   const designs = document.querySelector('.designs');
   new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { designs.classList.add('in'); o.disconnect(); } }, { threshold: .3 }).observe(designs);
 
-  const navLinks = [...document.querySelectorAll('.topnav a:not(.brand)')];
+  const nav = document.querySelector('.topnav'), navLinks = [...nav.querySelectorAll('a:not(.brand)')];
   const navIO = new IntersectionObserver(es => es.forEach(e => {
     if (!e.isIntersecting) return;
     navLinks.forEach(a => { const on = a.hash === `#${e.target.id}`; a.classList.toggle('active', on); on ? a.setAttribute('aria-current', 'location') : a.removeAttribute('aria-current'); });
+    const a = nav.querySelector('a.active');                          // phones: the nav scrolls, keep the active link in view
+    if (a && nav.scrollWidth > nav.clientWidth) nav.scrollTo({ left: a.offsetLeft - (nav.clientWidth - a.offsetWidth) / 2, behavior: 'smooth' });
   }), { rootMargin: '-40% 0px -55% 0px' });
   navLinks.forEach(a => { const s = document.querySelector(a.hash); if (s) navIO.observe(s); });
 

@@ -574,3 +574,38 @@ dialog a { display: inline-block; margin-top: 10px; color: #333; font-size: 14px
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .js .rv { opacity: 1; transform: none; }
 }
+
+/* ============================================================ phones: added last so it wins over the rules above */
+@media (max-width: 700px) {
+  /* nav spans the screen and scrolls; the active link is kept in view by app.js */
+  .topnav { left: 8px; right: 8px; transform: none; max-width: none; justify-content: flex-start; gap: 0; border: 1px solid rgba(255,255,255,.16); }
+  .topnav::before { display: none; }   /* the glass ring would scroll away with the links */
+  .topnav a { padding: 6px 10px; }
+  /* hero links as a 2 x 2 grid instead of 3 + 1 */
+  .links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; max-width: 320px; margin-inline: auto; }
+  .links .btn { justify-content: center; }
+  /* pipeline slide fits the width (no sideways scrolling); the tapped stage's card docks below it */
+  .pipe-scroll { overflow: hidden; border-radius: 16px; }
+  .pipe, .pipe.ov { min-width: 0; }
+  .pipe-hint { margin-top: -18px; }
+  .pipe-hint::after { content: ''; }
+  /* tighter vertical rhythm */
+  .abstract { padding: 40px 0 10px; }
+  .framework { margin-top: 24px; padding-bottom: 40px; }
+  .design-space, .results { padding-bottom: 24px; }
+  .video, .cite { padding-top: 48px; }
+  .section-sub { margin-bottom: 24px; font-size: 16.5px; }
+  /* framework steps: badge beside the title, text and media use the full width */
+  .beat { padding: 16px 0; }
+  .beat-tag { top: 16px; min-width: 40px; height: 40px; }
+  .beat h3 { min-height: 40px; display: flex; align-items: center; padding-left: 52px; font-size: 20px; margin-bottom: 10px; }
+  /* experiments: task name moves to the bottom-left so it doesn't cover the High chip */
+  .xp-task { top: auto; bottom: 8px; left: 8px; font-size: 12px; padding: 2px 9px; }
+  .xp-col span { margin: 6px 6px 0 0; font-size: 11px; padding: 1px 8px; }
+  .xp-side { padding: 10px 10px 8px; }
+  .xp-plot { height: auto; }
+  /* BibTeX keeps its line breaks and scrolls sideways instead of wrapping mid-field */
+  .bib { padding: 16px; }
+  .bib pre { white-space: pre; overflow-wrap: normal; overflow-x: auto; font-size: 11.5px; padding-top: 44px; }
+  .foot { padding-bottom: 32px; }
+}

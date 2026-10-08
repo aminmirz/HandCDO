@@ -10,7 +10,7 @@
   const NS = 'http://www.w3.org/2000/svg';
   const COLORS = { high: '#32cd32', mid: '#4169e1', low: '#ff4500' };            // limegreen / royalblue / orangered, as in the paper
   const TICKS = { spoon: 2, hammer: .5, knife: 2 };
-  const VW = 640, VH = 250, M = { l: 44, r: 12, t: 12, b: 30 };
+  const VW = innerWidth < 700 ? 420 : 640, VH = 250, M = { l: 44, r: 12, t: 12, b: 30 };   // narrower plot on phones keeps the labels readable
   const el = (n, a, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.append(e); return e; };
 
   rows.forEach(row => {
