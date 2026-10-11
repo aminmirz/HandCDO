@@ -20,7 +20,6 @@ HandCDO/
 - Use `generation_v2/` for the current generator. It includes randomized parameter sampling, batch generation, Blender assembly/export code, and a Blender add-on under `generation_v2/blender/`.
 - Use `iros_paper_codebase/generation/` for the original generator used in the IROS submission.
 - Use `iros_paper_codebase/optimization/` for the nested optimization pipeline. The optimizer generates candidate hand designs and scores them through `iros_paper_codebase/optimization/grasp_evaluation/`.
-- The project page is defined by `index.html` and the media in `website_assets/`.
 
 ## Code Organization
 
